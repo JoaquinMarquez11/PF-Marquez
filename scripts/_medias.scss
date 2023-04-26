@@ -42,20 +42,3 @@
  .img4{
      width: 100%;
  }
-
- footer{
-    margin-top: 50px;
-    background-color: $bluedarkColor;
-     display: flex;
-     justify-content: space-around;
-     svg{
-        width: 30px;
-        margin-right: 10px;
-     }
-     a{
-        text-decoration: none;
-        color: $secondaryColor;
-        font-size: $textMd;
-        display: block;
-     }
-}

@@ -228,3 +228,25 @@ table{
     flex-direction: row;
     align-items: center;
 }
+
+footer{
+    margin-top: 50px;
+    background-color: $bluedarkColor;
+     display: flex;
+     justify-content: space-around;
+    
+     div:nth-child(2){
+        margin: 10px 0;
+    }
+
+     svg{
+        width: 30px;
+        margin-right: 10px;
+     }
+     a{
+        text-decoration: none;
+        color: $secondaryColor;
+        font-size: $textMd;
+        display: block;
+     }
+}

@@ -260,6 +260,26 @@ table {
   align-items: center;
 }
 
+footer {
+  margin-top: 50px;
+  background-color: rgb(3, 34, 59);
+  display: flex;
+  justify-content: space-around;
+}
+footer div:nth-child(2) {
+  margin: 10px 0;
+}
+footer svg {
+  width: 30px;
+  margin-right: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  display: block;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -334,6 +354,9 @@ table {
   align-items: center;
   margin-top: 20px;
 }
+.tienda .actions input[placeholder=buscar] {
+  width: 350px;
+}
 .tienda .prod1 {
   grid-area: prod1;
   display: grid;
@@ -378,20 +401,6 @@ table {
   grid-area: prod8;
   display: flex;
   flex-direction: column;
-}
-
-footer {
-  flex-direction: column;
-  align-items: center;
-}
-footer div:nth-child(2) {
-  margin: 10px 0;
-}
-footer a {
-  font-size: 1.6em;
-}
-footer svg {
-  width: 40px;
 }
 
 .productos {
@@ -468,23 +477,6 @@ footer svg {
 
 .img4 {
   width: 100%;
-}
-
-footer {
-  margin-top: 50px;
-  background-color: rgb(3, 34, 59);
-  display: flex;
-  justify-content: space-around;
-}
-footer svg {
-  width: 30px;
-  margin-right: 10px;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
