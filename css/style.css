@@ -176,41 +176,11 @@
          grid-row-gap: 8px;
     }
 
-    .principal{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5,auto);
-        grid-template-areas:
-        "header header"
-        "info info2"
-        "cathombre promo"
-        "cathombre catmujer"
-        "contacto catmujer";
-    }
-
    .actions input[placeholder="buscar"]{
     width: 350px;
    }
 
-   footer{
-    flex-direction: column;
-    align-items: center;
-   }
-
-    footer svg{
-        width: 40px;
-    }
-
-    footer div:nth-child(2){
-        margin: 10px 0;
-    }
-
-    footer a{
-        font-size: 1.6em;
-    }
-
-}
-
-  .colo1{
+  .color1{
     background-color: #000000;
   }
   
@@ -230,4 +200,4 @@
     background-color: #050e0f;
     color: white;
   }
-
+  

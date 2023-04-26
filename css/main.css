@@ -202,6 +202,64 @@ table {
   grid-area: footer;
 }
 
+.principal {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "info info2" "cathombre promo" "cathombre catmujer" "contacto catmujer";
+}
+
+.cathombre {
+  grid-area: cathombre;
+  display: flex;
+  justify-content: center;
+}
+
+.catmujer {
+  grid-area: catmujer;
+  display: flex;
+}
+
+.promo {
+  grid-area: promo;
+  display: flex;
+}
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+}
+
+.info2 {
+  grid-area: info2;
+  display: flex;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.about {
+  padding: 10px 0;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -216,7 +274,8 @@ table {
   border: none;
   border-radius: 3px;
 }
-.actions input {
+.actions input[placeholder=buscar] {
+  width: 350px;
   padding: 6px;
   border-radius: 3px;
   border: none;
@@ -319,6 +378,20 @@ table {
   grid-area: prod8;
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+}
+footer div:nth-child(2) {
+  margin: 10px 0;
+}
+footer a {
+  font-size: 1.6em;
+}
+footer svg {
+  width: 40px;
 }
 
 .productos {
