@@ -1,0 +1,122 @@
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 3px;
+    button{
+        margin-left: 10px;
+        background-color: $brownColor;
+        color: $mainColor;
+        padding: 7px;
+        border: none;
+        border-radius: 3px;
+    }
+    input{
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: $bluedarkColor;
+        align-items: center;
+    }
+}    
+
+.filters{
+    padding: 0 20px 30px 30px;
+    border-radius: 9px;
+    a{
+        color: $secondaryColor;
+        font-size: $textSm;
+        text-decoration: none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+        &:hover{
+            color: $keyColor;
+        }
+            span{
+                display: block;
+                color: $secondaryColor;
+                margin: 10px 0;
+                letter-spacing: 1px;
+            }
+                select{
+                    color: $secondaryColor;
+                    border: none;
+                    background-color: $mainColor;
+                    margin-bottom: 10px;
+                    font-size: $textMd;
+                }
+                    li{
+                        padding-left: 10px;
+                        list-style: none;
+                    }
+    }
+
+}
+ 
+.tienda{
+    display: grid;
+    grid-template-areas:
+    "actions actions actions actions"
+    "prod1 prod2 prod3 prod4"
+    "prod5 prod6 prod7 prod8";
+     grid-column-gap: 8px;
+     grid-row-gap: 8px;
+     section{
+        border-radius: 10px;
+        padding: 10px 0;
+        margin: 0 20px;
+     }
+     .actions{
+        background-color: $mainColor;
+        padding: 0 30px;
+        grid-area: actions;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+     }
+     .prod1{
+        grid-area: prod1;
+        display: grid;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+     }
+     .prod2{
+        grid-area: prod2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .prod3{
+        grid-area: prod3;
+        display: flex;
+        flex-direction: column;
+     }
+     .prod4{
+        grid-area: prod4;
+        display: flex;
+        flex-direction: column;
+     }
+     .prod5{
+        grid-area: prod5;
+        display: flex;
+        flex-direction: column;
+     }
+     .prod6{
+        grid-area: prod6;
+        display: flex;
+        flex-direction: column;
+     }
+     .prod7{
+        grid-area: prod7;
+        display: flex;
+        flex-direction: column;
+     }
+     .prod8{
+        grid-area: prod8;
+        display: flex;
+        flex-direction: column;
+     }
+}

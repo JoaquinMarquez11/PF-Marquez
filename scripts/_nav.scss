@@ -1,0 +1,40 @@
+// nesting / anidacion
+nav{
+    background-color: $secondaryColor;
+    border-top: solid 5px $redColor;
+    border-right: solid 5px $cyanColor;
+    border-bottom: solid 5px $greenyellowColor;
+    border-left: solid 5px $yellowgreenColor;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 10px;
+        ul{
+            list-style: none;
+            display: flex;
+            margin-left: 20px;
+            li{
+                color: $ainsboroColor;
+                margin-right: 10px;
+                a{
+                    color: $secondaryColor;
+                    text-decoration: underline;
+                    font-size: $textBold;
+                    font-family: $mainFont;
+                    font-weight: $textSm;
+                    &:hover{
+                       color: $keyColor;
+                       &:visited{
+                        color: $greyColor;
+                        :active{
+                            color: $redColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

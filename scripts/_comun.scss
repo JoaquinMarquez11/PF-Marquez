@@ -1,0 +1,168 @@
+body{
+    font-size: 62.5%;
+}
+
+h1,h2,h3{
+color: $mainColor;
+font-family: $mainFont;
+font-weight: $textBold;
+margin-bottom: 20px;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+h1{
+    font-size: $textLg
+}
+
+h2{
+    font-size: $textMd
+}
+
+h3{
+    font-size: $textMd;
+}
+
+p{
+    color: $keyColor;
+    font-size: 1.30rem;
+    line-height: 1.35rem;
+    padding: 0 20px;
+    font-weight: $textLigth
+}
+
+label{
+    color: $mainColor;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    font-weight: $textLigth;
+    font-size: 200%;
+}
+
+.align-items{
+    align-items: center;
+    }
+
+.text-green{
+    color: $greenColor
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-lighlight{
+    background-color: $secondaryColor;
+}
+
+.bg-violet{
+    background-color: $secondaryColor;
+    border-top: solid 5px $redColor;
+    border-right: solid 5px $cyanColor;
+    border-bottom: solid 5px $greenyellowColor;
+    border-left: solid 5px $yellowgreenColor;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    width: auto;
+}
+
+.bg-gris{
+    background-color: $greyColor;
+}
+
+.box-top{
+    padding: 0px;
+    text-align: center;
+    color: $greyColor;
+    background-color: $mainColor;
+    font-size: $textLg;
+    width: 97.6%;
+}
+
+.bg-pattern{
+    background-color: $secondaryColor;
+}
+
+.table-center{
+    height: 300px;
+    font-family: 'Source Code Pro', sans-serif; 
+    font-weight: $textBold;
+    border-top: solid 5px $palegreenColor;
+    border-left: solid 5px $palegoldenrodColor;
+    border-bottom: solid 5px $paleturquoiseColor;
+    border-right: solid 5px $palevioletredColor;
+    width: 500px;
+    margin: 0 auto;  
+}
+
+.linkMore{
+    color: $greyColor;
+    font-size: $textSm;
+    text-decoration: dashed;
+    border-bottom: 3px;
+    border-color: $brownColor;
+    background-color: $secondaryColor;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+}
+
+.d-block{
+    display: block;
+
+}
+
+.template-areas{
+    grid-template-columns: repeat();
+    grid-template-rows: 10% 60% 10%;
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+}   
+
+#botonera{
+    grid-area: nav;
+}
+
+#centro{
+    grid-area: main;
+}
+
+#links-interes{
+    grid-area: link;
+}
+
+#pie{
+    grid-area: footer;
+}
+
+
