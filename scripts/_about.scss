@@ -1,0 +1,71 @@
+.about{
+    padding: 10px   0;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &--reverse{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+        }
+    }
+    &__header--left{
+        text-align: left;
+        margin: 10px 0;
+        padding-left: 60px;
+    }
+    &__text--md{
+        font-size: 1.8rem;
+    }
+    &__link--left{
+        display: block;
+        text-align: left;
+        color: black;
+        text-decoration: none;
+        font-size: 1.4em;
+        padding-left: 60px;
+        margin: 10px 0;
+    }
+    &__list--gris{
+        color: grey;
+        list-style: square;
+        padding-left: 80px;
+        font-size: 1.4em;
+        line-height: 1.8em;
+        font-weight: 300;
+        margin: 10px 0;
+    }
+    &__img--md:hover{
+        border: solid 1px black;
+    }
+}
+
+.about ul li:nth-child(){
+    color: black;
+}
+
+.about ul li:last-child{
+    color: aquamarine;
+}
+
+.about h2.one::before{
+    content: "**";
+    margin-right: 10px;
+}
+
+.about h2.one::after{
+    content: "**";
+    color: black;
+    margin-left: 10px;
+}
+
+.about p.two::first-letter{
+    color: darkgoldenrod;
+    font-size: 2em;
+    background-color: aliceblue;
+}
+
+.about p.two::first-line{
+    font-weight: 700;
+}
