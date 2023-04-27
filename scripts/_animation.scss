@@ -1,0 +1,25 @@
+.scale:hover{
+    transform: scaleX(1.099);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+@keyframes encabezadoAnimado{
+    0%{height: 100%}
+    25%{height: 75%}
+    50%{height: 50%}
+    75%{height: 75%}
+    100%{height: 100%}
+}
+
+.encabezado{
+    animation-name: encabezadoAnimado;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes textAlpha{
+    from{opacity: 0}
+    to{opacity: 1}
+}

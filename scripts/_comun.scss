@@ -14,15 +14,19 @@ box-sizing: border-box;
 
 
 h1{
-    font-size: $textLg
+    font-size: $textLg;
 }
 
 h2{
-    font-size: $textMd
+    font-size: $textMd;
+    animation-name: textAlpha;
+    animation: 3s;
 }
 
 h3{
     font-size: $textMd;
+    animation-name: textAlpha;
+    animation: 3s;
 }
 
 p{
@@ -30,7 +34,7 @@ p{
     font-size: 1.30rem;
     line-height: 1.35rem;
     padding: 0 20px;
-    font-weight: $textLigth
+    font-weight: $textLigth;
 }
 
 label{
@@ -53,7 +57,7 @@ table{
     }
 
 .text-green{
-    color: $greenColor
+    color: $greenColor;
 }
 
 .text-left{

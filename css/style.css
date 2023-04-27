@@ -74,9 +74,3 @@
 .about p.two::first-line{
     font-weight: 700;
 }
-
-.scale:hover{
-    transform: scaleX(1.099);
-    transition: all 1s;
-    cursor: pointer;
-}
