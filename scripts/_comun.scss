@@ -251,3 +251,22 @@ footer{
         display: block;
      }
 }
+
+@media(max-width: 768px){
+    .principal{
+        display: grid;
+        grid-template-columns:auto;
+        justify-content: center;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "info"
+        "info2"
+        "cathombre" 
+        "promo"
+        "cathombre"
+        "catmujer"
+        "contacto"
+        "catmujer";
+    }
+}
