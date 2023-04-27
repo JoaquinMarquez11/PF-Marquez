@@ -24,9 +24,17 @@ nav{
                     text-decoration: underline;
                     font-size: $textBold;
                     font-family: $mainFont;
-                    font-weight: $textSm;
+                    font-weight: $textMd;
+                    /*subrayado animado*/
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
                     &:hover{
                        color: $keyColor;
+                       /*subrayado animado*/
+                        background-size: 100& 2px;
                     }
                        &:visited{
                         color: $greyColor;
@@ -39,5 +47,4 @@ nav{
                 }
             }
         }
-    
-}
+    }
