@@ -11,6 +11,7 @@ nav{
     align-items: center;
     img{
         width: 10px;
+        }
         ul{
             list-style: none;
             display: flex;
@@ -26,15 +27,17 @@ nav{
                     font-weight: $textSm;
                     &:hover{
                        color: $keyColor;
+                    }
                        &:visited{
                         color: $greyColor;
+                       }
                         :active{
                             color: $redColor;
                             }
-                        }
-                    }
+                        
+                    
                 }
             }
         }
-    }
+    
 }

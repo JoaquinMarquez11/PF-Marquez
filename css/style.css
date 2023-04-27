@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap');
 
-.about{
-    padding: 10px   0;
-}
-
 .about__box{
     display: flex;
     flex-direction: row;
@@ -46,77 +42,35 @@
     margin: 10px 0;
 }
 
-/*------ Pseudo clases (.about) ------*/
-
-/* --- hover ---  */
 .about__img--md:hover{
     border: solid 1px black;
 }
-/* --- visited --- */
 
-/*--- active --- */
-
-/* --- first child --- */
-
-/*
-.about ul li:first-child{
-
-}
-*/
-
-/* --- nth child --- */
 .about ul li:nth-child(){
     color: black;
 }
-/* --- last child --- */
+
 .about ul li:last-child{
     color: aquamarine;
 }
-/* --- :not --- */
-/*
-.about ul li:not(#){
 
-} */
-
-/* ===== Pseudo elementos (.about) =====  */
-
-/*------ before ------*/
 .about h2.one::before{
     content: "**";
     margin-right: 10px;
 }
-/*------ after ------*/
+
 .about h2.one::after{
     content: "**";
     color: black;
     margin-left: 10px;
 }
-/*------ first latter ------*/
+
 .about p.two::first-letter{
     color: darkgoldenrod;
     font-size: 2em;
     background-color: aliceblue;
 }
-/*------ first line ------*/
+
 .about p.two::first-line{
     font-weight: 700;
 }
-
-@media(max-width: 768px){
-   .tienda{
-        display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: repeat(9,auto);
-        grid-template-areas:
-        "actions"
-        "prod1"
-        "prod2"
-        "prod3"
-        "prod4"
-        "prod5"
-        "prod6"
-        "prod7"
-        "prod8";
-         grid-column-gap: 8px;
-         grid-row-gap: 8px;
-    }

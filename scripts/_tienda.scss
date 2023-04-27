@@ -25,6 +25,10 @@
 .filters{
     padding: 0 20px 30px 30px;
     border-radius: 9px;
+    li{
+        padding-left: 10px;
+        list-style: none;
+    }
     a{
         color: $secondaryColor;
         font-size: $textSm;
@@ -47,13 +51,28 @@
                     margin-bottom: 10px;
                     font-size: $textMd;
                 }
-                    li{
-                        padding-left: 10px;
-                        list-style: none;
-                    }
     }
 
 }
+
+@media(max-width: 768px){
+    .tienda{
+         display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,auto);
+         grid-template-areas:
+         "actions"
+         "prod1"
+         "prod2"
+         "prod3"
+         "prod4"
+         "prod5"
+         "prod6"
+         "prod7"
+         "prod8";
+          grid-column-gap: 8px;
+          grid-row-gap: 8px;
+     }
  
 .tienda{
     display: grid;

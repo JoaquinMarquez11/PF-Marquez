@@ -183,7 +183,10 @@ table {
 .template-areas {
   grid-template-columns: repeat();
   grid-template-rows: 10% 60% 10%;
-  grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+  grid-template-areas:
+   "nav nav nav"
+   "main main main"
+   "footer footer footer";
 }
 
 #botonera {
@@ -207,7 +210,12 @@ table {
   grid-template-columns: auto auto;
   justify-content: center;
   grid-template-rows: auto;
-  grid-template-areas: "header header" "info info2" "cathombre promo" "cathombre catmujer" "contacto catmujer";
+  grid-template-areas: 
+  "header header" 
+  "info info2" 
+  "cathombre promo" 
+  "cathombre catmujer" 
+  "contacto catmujer";
 }
 
 .cathombre {
