@@ -57,19 +57,8 @@
 
 @media(max-width: 768px){
     .tienda{
-         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9,auto);
-         grid-template-areas:
-         "actions"
-         "prod1"
-         "prod2"
-         "prod3"
-         "prod4"
-         "prod5"
-         "prod6"
-         "prod7"
-         "prod8";
+        grid-template-rows: 1fr;
           grid-column-gap: 8px;
           grid-row-gap: 8px;
      }

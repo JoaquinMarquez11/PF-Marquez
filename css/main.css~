@@ -1,18 +1,595 @@
-/* Error: Expected "n".
- *    ,
- * 44 | .about ul li:nth-child(){
- *    |                        ^
- *    '
- *   scripts\_about.scss 44:24  @import
- *   scripts\main.scss 8:9      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Expected "n".\a    \2577 \a 44 \2502  .about ul li:nth-child(){\d\a    \2502                         ^\a    \2575 \a   scripts\\_about.scss 44:24  @import\a   scripts\\main.scss 8:9      root stylesheet';
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap");
+nav {
+  background-color: white;
+  border-top: solid 5px red;
+  border-right: solid 5px cyan;
+  border-bottom: solid 5px greenyellow;
+  border-left: solid 5px yellowgreen;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+nav img {
+  width: 10%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 20px;
+}
+nav ul li {
+  color: ainsboro;
+  margin-right: 10px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: underline;
+  font-size: 700;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 1.5em;
+  /*subrayado animado*/
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+nav ul li a:hover {
+  color: brown;
+  /*subrayado animado*/
+  background-size: 100 2px;
+}
+nav ul li a:visited {
+  color: grey;
+}
+nav ul li a :active {
+  color: red;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  color: white;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2, 4em;
+}
+
+h2 {
+  font-size: 1.5em;
+  animation-name: textAlpha;
+  animation: 3s;
+}
+
+h3 {
+  font-size: 1.5em;
+  animation-name: textAlpha;
+  animation: 3s;
+}
+
+p {
+  color: brown;
+  font-size: 1.3rem;
+  line-height: 1.35rem;
+  padding: 0 20px;
+  font-weight: 300;
+}
+
+label {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-weight: 300;
+  font-size: 200%;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-lighlight {
+  background-color: black;
+}
+
+.bg-violet {
+  background-color: black;
+  border-top: solid 5px red;
+  border-right: solid 5px cyan;
+  border-bottom: solid 5px greenyellow;
+  border-left: solid 5px yellowgreen;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+  width: auto;
+}
+
+.bg-gris {
+  background-color: grey;
+}
+
+.box-top {
+  padding: 0px;
+  text-align: center;
+  color: grey;
+  background-color: white;
+  font-size: 2, 4em;
+  width: 97.6%;
+}
+
+.bg-pattern {
+  background-color: black;
+}
+
+.table-center {
+  height: 300px;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 700;
+  border-top: solid 5px palegreen;
+  border-left: solid 5px palegoldenrod;
+  border-bottom: solid 5px paleturquoise;
+  border-right: solid 5px palevioletred;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.linkMore {
+  color: grey;
+  font-size: 1em;
+  text-decoration: dashed;
+  border-bottom: 3px;
+  border-color: brown;
+  background-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.template-areas {
+  grid-template-columns: repeat();
+  grid-template-rows: 10% 60% 10%;
+  grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+}
+
+#botonera {
+  grid-area: nav;
+}
+
+#centro {
+  grid-area: main;
+}
+
+#links-interes {
+  grid-area: link;
+}
+
+#pie {
+  grid-area: footer;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "info info2" "cathombre promo" "cathombre catmujer" "contacto catmujer";
+}
+
+.cathombre {
+  grid-area: cathombre;
+  display: flex;
+  justify-content: center;
+}
+
+.catmujer {
+  grid-area: catmujer;
+  display: flex;
+}
+
+.promo {
+  grid-area: promo;
+  display: flex;
+}
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+}
+
+.info {
+  grid-area: info;
+  display: flex;
+}
+
+.info2 {
+  grid-area: info2;
+  display: flex;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.about {
+  padding: 10px 0;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: rgb(3, 34, 59);
+  display: flex;
+  justify-content: space-around;
+}
+footer div:nth-child(2) {
+  margin: 10px 0;
+}
+footer svg {
+  width: 30px;
+  margin-right: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .principal {
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr;
+    justify-content: center;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 3px;
+}
+.actions button {
+  margin-left: 10px;
+  background-color: brown;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+}
+.actions input[placeholder=buscar] {
+  width: 350px;
+  padding: 6px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(3, 34, 59);
+  align-items: center;
+}
+
+.filters {
+  padding: 0 20px 30px 30px;
+  border-radius: 9px;
+}
+.filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+.filters a {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filters a:hover {
+  color: brown;
+}
+.filters a span {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.filters a select {
+  color: black;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}
+.tienda {
+  display: grid;
+  grid-template-areas: "actions actions actions actions" "prod1 prod2 prod3 prod4" "prod5 prod6 prod7 prod8";
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+.tienda section {
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 0 20px;
+}
+.tienda .actions {
+  background-color: white;
+  padding: 0 30px;
+  grid-area: actions;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tienda .actions input[placeholder=buscar] {
+  width: 350px;
+}
+.tienda .prod1 {
+  grid-area: prod1;
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.tienda .prod2 {
+  grid-area: prod2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tienda .prod3 {
+  grid-area: prod3;
+  display: flex;
+  flex-direction: column;
+}
+.tienda .prod4 {
+  grid-area: prod4;
+  display: flex;
+  flex-direction: column;
+}
+.tienda .prod5 {
+  grid-area: prod5;
+  display: flex;
+  flex-direction: column;
+}
+.tienda .prod6 {
+  grid-area: prod6;
+  display: flex;
+  flex-direction: column;
+}
+.tienda .prod7 {
+  grid-area: prod7;
+  display: flex;
+  flex-direction: column;
+}
+.tienda .prod8 {
+  grid-area: prod8;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productos figure {
+  width: 30%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.productos figure p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin: 20px 0;
+  text-align: left;
+}
+.productos figure figcaption {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+.productos figure button {
+  border: solid;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 10px 0;
+}
+.about__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__box--reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+.about__header--left {
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 60px;
+}
+.about__text--md {
+  font-size: 1.8rem;
+}
+.about__link--left {
+  display: block;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding-left: 60px;
+  margin: 10px 0;
+}
+.about__list--gris {
+  color: grey;
+  list-style: square;
+  padding-left: 80px;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.about__img--md:hover {
+  border: solid 1px black;
+}
+
+.img-vinchi {
+  width: 90%;
+  object-fit: cover;
+  padding-left: 3%;
+}
+
+.img-promo {
+  object-fit: cover;
+  width: 40%;
+}
+
+.img-mujer {
+  width: 70%;
+  object-fit: cover;
+  padding-left: 3%;
+}
+
+.img-contactate {
+  width: 60%;
+  object-fit: cover;
+  padding-left: 3%;
+  justify-content: center;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  align-items: center;
+  /*TAMAÑO CATALOGO*/
+}
+
+.img2 {
+  width: 250px;
+  /*TAMAÑO LOGO VAGO*/
+}
+
+.img3 {
+  width: 50px;
+  /*TAMAÑO IMAGENES IG Y FB */
+}
+
+.img4 {
+  width: 100%;
+}
+
+.scale:hover {
+  transform: scaleX(1.099);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+@keyframes encabezadoAnimado {
+  0% {
+    height: 100%;
+  }
+  25% {
+    height: 75%;
+  }
+  50% {
+    height: 50%;
+  }
+  75% {
+    height: 75%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.encabezado {
+  animation-name: encabezadoAnimado;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes textAlpha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css~.map */

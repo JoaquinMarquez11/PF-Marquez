@@ -39,7 +39,7 @@ nav ul li a {
 nav ul li a:hover {
   color: brown;
   /*subrayado animado*/
-  background-size: 100 nav ul li a:hover 2px;
+  background-size: 100 2px;
 }
 nav ul li a:visited {
   color: grey;
@@ -298,7 +298,16 @@ footer a {
     grid-template-columns: auto;
     justify-content: center;
     grid-template-rows: auto;
-    grid-template-areas: "header" "info" "info2" "cathombre" "promo" "cathombre" "catmujer" "contacto" "catmujer";
+    grid-template-areas:
+    "header"
+    "info"
+    "info2"
+    "cathombre"
+    "promo"
+    "cathombre"
+    "catmujer"
+    "contacto"
+    "catmujer";
   }
 }
 .actions {
@@ -361,14 +370,26 @@ footer a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
-    grid-template-areas: "actions" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6" "prod7" "prod8";
+    grid-template-areas:
+    "actions"
+    "prod1"
+    "prod2"
+    "prod3"
+    "prod4"
+    "prod5"
+    "prod6"
+    "prod7"
+    "prod8";
     grid-column-gap: 8px;
     grid-row-gap: 8px;
   }
 }
 .tienda {
   display: grid;
-  grid-template-areas: "actions actions actions actions" "prod1 prod2 prod3 prod4" "prod5 prod6 prod7 prod8";
+  grid-template-areas:
+  "actions actions actions actions"
+  "prod1 prod2 prod3 prod4"
+  "prod5 prod6 prod7 prod8";
   grid-column-gap: 8px;
   grid-row-gap: 8px;
 }

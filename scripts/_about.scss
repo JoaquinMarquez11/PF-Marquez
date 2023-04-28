@@ -40,32 +40,3 @@
         border: solid 1px black;
     }
 }
-
-.about ul li:nth-child(){
-    color: black;
-}
-
-.about ul li:last-child{
-    color: aquamarine;
-}
-
-.about h2.one::before{
-    content: "**";
-    margin-right: 10px;
-}
-
-.about h2.one::after{
-    content: "**";
-    color: black;
-    margin-left: 10px;
-}
-
-.about p.two::first-letter{
-    color: darkgoldenrod;
-    font-size: 2em;
-    background-color: aliceblue;
-}
-
-.about p.two::first-line{
-    font-weight: 700;
-}

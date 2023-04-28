@@ -258,19 +258,10 @@ footer{
 
 @media(max-width: 768px){
     .principal{
-        display: grid;
-        grid-template-columns:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         justify-content: center;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "header"
-        "info"
-        "info2"
-        "cathombre" 
-        "promo"
-        "cathombre"
-        "catmujer"
-        "contacto"
-        "catmujer";
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
     }
 }
