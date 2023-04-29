@@ -302,6 +302,69 @@ footer a {
     grid-row-gap: 8px;
   }
 }
+.about {
+  padding: 10px 0;
+}
+.about__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__box--reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+.about__header--left {
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 60px;
+}
+.about__text--md {
+  font-size: 1.8rem;
+}
+.about__link--left {
+  display: block;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding-left: 60px;
+  margin: 10px 0;
+}
+.about__list--gris {
+  color: grey;
+  list-style: square;
+  padding-left: 80px;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.about__img--md:hover {
+  border: solid 1px black;
+}
+.about .about ul li:last-child {
+  color: cyan;
+}
+.about .about h2.one::before {
+  content: "**";
+  margin-right: 10px;
+}
+.about .about h2.one::after {
+  content: "**";
+  color: black;
+  margin-left: 10px;
+}
+.about .about p.two::first-letter {
+  color: darkgoldenrod;
+  font-size: 2em;
+  background-color: aliceblue;
+}
+.about .about p.two::first-line {
+  font-weight: 700;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -463,49 +526,6 @@ footer a {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
-}
-
-.about {
-  padding: 10px 0;
-}
-.about__box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.about__box--reverse {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-}
-.about__header--left {
-  text-align: left;
-  margin: 10px 0;
-  padding-left: 60px;
-}
-.about__text--md {
-  font-size: 1.8rem;
-}
-.about__link--left {
-  display: block;
-  text-align: left;
-  color: black;
-  text-decoration: none;
-  font-size: 1.4em;
-  padding-left: 60px;
-  margin: 10px 0;
-}
-.about__list--gris {
-  color: grey;
-  list-style: square;
-  padding-left: 80px;
-  font-size: 1.4em;
-  line-height: 1.8em;
-  font-weight: 300;
-  margin: 10px 0;
-}
-.about__img--md:hover {
-  border: solid 1px black;
 }
 
 .img-vinchi {

@@ -28,7 +28,7 @@
         margin: 10px 0;
     }
     &__list--gris{
-        color: grey;
+        color: $greyColor;
         list-style: square;
         padding-left: 80px;
         font-size: 1.4em;
@@ -37,14 +37,11 @@
         margin: 10px 0;
     }
     &__img--md:hover{
-        border: solid 1px black;
-    }
-    .about ul li:nth-child(){
-        color: black;
+        border: solid 1px $secondaryColor;
     }
     
     .about ul li:last-child{
-        color: aquamarine;
+        color: $cyanColor;
     }
     
     .about h2.one::before{
@@ -66,6 +63,5 @@
     
     .about p.two::first-line{
         font-weight: 700;
-    }
-    
+    }   
 }
